@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4klsvnf6wqkd"]
+
+[ext_resource type="Texture2D" uid="uid://cof5b3ssoaxay" path="res://Assets/Buildings/Tent.png" id="1_6wycl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lh45g"]
+radius = 144.056
+
+[node name="Tent" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+y_sort_enabled = true
+texture = ExtResource("1_6wycl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, 89)
+shape = SubResource("CircleShape2D_lh45g")
